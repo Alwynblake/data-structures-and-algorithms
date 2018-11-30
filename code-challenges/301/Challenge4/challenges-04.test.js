@@ -13,7 +13,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  /d/.test(input);
+  let regex = /\d/;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -24,9 +25,9 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  // Solution code here...
-};
+const isCapitalized = str => str.match(/[A-Z][a-z]*/g);
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
