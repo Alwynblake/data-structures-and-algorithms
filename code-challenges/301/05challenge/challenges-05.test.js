@@ -16,7 +16,7 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   for (let i = 0; i < howMuchPencil.length; i++) {
-    let result = str[i].slice(0, i)
+    let result = str[i].slice(1)
     return result;
   };
 
@@ -30,8 +30,9 @@ const howMuchPencil = (str) => {
   ------------------------------------------------------------------------------------------------ */
 
   const wordsToCharList = (arr) => {
+
     // Solution code here...
-    //   let splits = wordsToCharList.split(/(\d)/);
+    //let splits = wordsToCharList.split(/(\d)/);
     // };
     // return splits;
 
